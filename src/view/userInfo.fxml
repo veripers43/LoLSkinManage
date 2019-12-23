@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserInfoController">
+   <children>
+      <TableView fx:id="tvUserBuy" layoutX="10.0" layoutY="351.0" prefHeight="237.0" prefWidth="482.0" />
+      <Label layoutX="219.0" layoutY="320.0" text="구매내역" />
+      <Separator layoutX="17.0" layoutY="300.0" prefHeight="0.0" prefWidth="464.0" />
+      <PieChart fx:id="pcUserBuy" layoutX="10.0" layoutY="3.0" prefHeight="294.0" prefWidth="482.0" />
+   </children>
+</AnchorPane>

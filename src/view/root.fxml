@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.TabPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RootController">
+	<tabs>
+		<Tab text="홈">
+			<content>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="650.0">
+					<children>
+						<Label layoutX="123.0" layoutY="36.0" prefHeight="19.0" prefWidth="155.0" text="님 환영합니다.">
+                     <font>
+                        <Font name="Headline R" size="20.0" />
+                     </font></Label>
+						<Label alignment="CENTER" layoutX="388.0" layoutY="20.0" prefHeight="57.0" prefWidth="250.0" text="LOL 스킨 상점">
+                     <font>
+                        <Font name="Headline R" size="25.0" />
+                     </font></Label>
+						<Button fx:id="btnCharge" layoutX="917.0" layoutY="16.0" mnemonicParsing="false" text="충전" />
+						<Button fx:id="btnMyRoom" layoutX="845.0" layoutY="58.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="122.0" text="My Room" />
+						<Separator layoutX="12.0" layoutY="98.0" prefHeight="0.0" prefWidth="974.0" />
+						<Separator layoutX="252.0" layoutY="100.0" orientation="VERTICAL" prefHeight="511.0" prefWidth="0.0" />
+						<Label layoutX="278.0" layoutY="128.0" text="스킨">
+                     <font>
+                        <Font name="Arial Unicode MS" size="20.0" />
+                     </font></Label>
+						<Separator layoutX="252.0" layoutY="176.0" prefHeight="0.0" prefWidth="739.0" />
+						<TextField fx:id="txtSearch" layoutX="736.0" layoutY="123.0" />
+						<Label layoutX="99.0" layoutY="128.0" text="챔피언">
+                     <font>
+                        <Font name="Arial Unicode MS" size="20.0" />
+                     </font></Label>
+						<Button fx:id="btnAshe" layoutX="164.0" layoutY="235.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="애쉬">
+							<graphic>
+								<ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@../icons/Ashe.png" />
+									</image>
+								</ImageView>
+							</graphic>
+							<effect>
+								<DropShadow />
+							</effect>
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+						</Button>
+						<Button fx:id="btnLucian" layoutX="164.0" layoutY="305.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="루시안">
+							<graphic>
+								<ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@../icons/Lucian.png" />
+									</image>
+								</ImageView>
+							</graphic>
+							<padding>
+								<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+							</padding>
+							<effect>
+								<DropShadow />
+							</effect>
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+						</Button>
+						<Button fx:id="btnKaisa" layoutX="86.0" layoutY="305.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="74.0" text="카이사">
+							<padding>
+								<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+							</padding>
+							<effect>
+								<DropShadow />
+							</effect>
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                     <graphic>
+      								<ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+      									<image>
+      										<Image url="@../icons/Kaisa.png" />
+      									</image>
+      								</ImageView>
+                     </graphic>
+						</Button>
+						<Button fx:id="btnCaitlyn" layoutX="10.0" layoutY="305.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="72.0" text="케이틀린">
+							<effect>
+								<DropShadow />
+							</effect>
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                     <graphic>
+      								<ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+      									<image>
+      										<Image url="@../icons/Caitlyn.png" />
+      									</image>
+      								</ImageView>
+                     </graphic>
+						</Button>
+						<Button fx:id="btnLulu" layoutX="10.0" layoutY="377.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="룰루">
+							<effect>
+								<DropShadow />
+							</effect>
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                     <graphic>
+      								<ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+      									<image>
+      										<Image url="@../icons/Lulu.png" />
+      									</image>
+      								</ImageView>
+                     </graphic>
+						</Button>
+						<Button fx:id="btnAkali" layoutX="86.0" layoutY="235.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="75.0" text="아칼리">
+							<graphic>
+								<ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@../icons/Akali.png" />
+									</image>
+								</ImageView>
+							</graphic>
+							<padding>
+								<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+							</padding>
+							<effect>
+								<DropShadow />
+							</effect>
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+						</Button>
+						<Button fx:id="btnAhri" layoutX="10.0" layoutY="235.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="아리">
+							<graphic>
+								<ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@../icons/Ahri.png" />
+									</image>
+								</ImageView>
+							</graphic>
+							<padding>
+								<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+							</padding>
+							<effect>
+								<DropShadow />
+							</effect>
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+						</Button>
+						<Button fx:id="btnLux" layoutX="86.0" layoutY="377.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="럭스">
+							<graphic>
+								<ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@../icons/Lux.png" />
+									</image>
+								</ImageView>
+							</graphic>
+							<padding>
+								<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+							</padding>
+							<effect>
+								<DropShadow />
+							</effect>
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+						</Button>
+						<Button fx:id="btnPantheon" layoutX="166.0" layoutY="375.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="판테온">
+							<padding>
+								<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+							</padding>
+							<effect>
+								<DropShadow />
+							</effect>
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                     <graphic>
+      								<ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+      									<image>
+      										<Image url="@../icons/Pantheon.png" />
+      									</image>
+      								</ImageView>
+                     </graphic>
+						</Button>
+						<Button fx:id="btnQiyana" layoutX="11.0" layoutY="445.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="키아나">
+							<padding>
+								<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+							</padding>
+							<effect>
+								<DropShadow />
+							</effect>
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                     <graphic>
+      								<ImageView fitHeight="50.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+      									<image>
+      										<Image url="@../icons/Qiyana.png" />
+      									</image>
+      								</ImageView>
+                     </graphic>
+						</Button>
+						<Button fx:id="btnRakan" layoutX="86.0" layoutY="445.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="라칸">
+							<graphic>
+								<ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@../icons/Rakan.png" />
+									</image>
+								</ImageView>
+							</graphic>
+							<padding>
+								<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+							</padding>
+							<effect>
+								<DropShadow />
+							</effect>
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+						</Button>
+						<Button fx:id="btnXayah" layoutX="163.0" layoutY="445.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="자야">
+							<graphic>
+								<ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@../icons/Xayah.png" />
+									</image>
+								</ImageView>
+							</graphic>
+							<padding>
+								<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+							</padding>
+							<effect>
+								<DropShadow />
+							</effect>
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+						</Button>
+						<Button fx:id="btnTeemo" layoutX="8.0" layoutY="515.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="티모">
+							<graphic>
+								<ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@../icons/Teemo.png" />
+									</image>
+								</ImageView>
+							</graphic>
+							<padding>
+								<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+							</padding>
+							<effect>
+								<DropShadow />
+							</effect>
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+						</Button>
+						<Button fx:id="btnYasuo" layoutX="86.0" layoutY="515.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="야스오">
+							<graphic>
+								<ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@../icons/Yasuo.png" />
+									</image>
+								</ImageView>
+							</graphic>
+							<padding>
+								<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+							</padding>
+							<effect>
+								<DropShadow />
+							</effect>
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+						</Button>
+						<Button fx:id="btnYuumi" layoutX="163.0" layoutY="515.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="유미">
+							<graphic>
+								<ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@../icons/Yuumi.png" />
+									</image>
+								</ImageView>
+							</graphic>
+							<padding>
+								<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+							</padding>
+							<effect>
+								<DropShadow />
+							</effect>
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+						</Button>
+						<TableView fx:id="skinTableView" layoutX="253.0" layoutY="176.0" prefHeight="650.0" prefWidth="754.0" />
+						<Label fx:id="lbName" layoutX="58.0" layoutY="35.0" prefHeight="20.0" prefWidth="63.0">
+                     <font>
+                        <Font name="Headline R" size="20.0" />
+                     </font></Label>
+						<Label fx:id="lbName1" layoutX="854.0" layoutY="21.0" prefHeight="20.0" prefWidth="63.0" text="임채민">
+                     <font>
+                        <Font name="Haan Sale B" size="15.0" />
+                     </font></Label>
+						<Button fx:id="btnSearch" layoutX="931.0" layoutY="123.0" mnemonicParsing="false" text="검 색" />
+					</children>
+				</AnchorPane>
+			</content>
+		</Tab>
+		<Tab text="공지사항">
+			<content>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="602.0" prefWidth="1000.0">
+					<children>
+						<Separator layoutX="12.0" layoutY="98.0" prefHeight="0.0" prefWidth="974.0" />
+						<Label layoutX="201.0" layoutY="132.0" text=" LoL 월드 챔피언십 경기일정">
+                     <font>
+                        <Font name="Symbol" size="24.0" />
+                     </font></Label>
+						<Label layoutX="817.0" layoutY="130.0" text="구매 vip 순위" />
+						<Label layoutX="818.0" layoutY="398.0" text="신규스킨" />
+						<TableView fx:id="tvNewSkin" layoutX="706.0" layoutY="428.0" prefHeight="220.0" prefWidth="285.0" />
+						<TableView fx:id="tvVip" layoutX="735.0" layoutY="164.0" prefHeight="208.0" prefWidth="255.0" />
+						<Label layoutX="706.0" layoutY="198.0" text="1위" />
+						<Label layoutX="706.0" layoutY="227.0" text="2위" />
+						<Label layoutX="705.0" layoutY="253.0" text="3위" />
+						<Label layoutX="706.0" layoutY="281.0" text="4위" />
+						<Label layoutX="706.0" layoutY="309.0" text="5위" />
+                  <ImageView fitHeight="102.0" fitWidth="1016.0" layoutX="-8.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/20191024_195348.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="446.0" fitWidth="660.0" layoutX="24.0" layoutY="203.0">
+                     <image>
+                        <Image url="@../icons/KakaoTalk_20191025_042604614.jpg" />
+                     </image>
+                  </ImageView>
+					</children>
+				</AnchorPane>
+			</content>
+		</Tab>
+		<Tab text="통계">
+			<content>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+					<children>
+						<Separator layoutX="503.0" layoutY="101.0" orientation="VERTICAL" prefHeight="508.0" prefWidth="0.0" />
+						<BarChart fx:id="skinBarChart" layoutX="18.0" layoutY="155.0" prefHeight="528.0" prefWidth="473.0" title="인기 Skin TOP 10">
+							<xAxis>
+								<CategoryAxis side="BOTTOM" />
+							</xAxis>
+							<yAxis>
+								<NumberAxis side="LEFT" />
+							</yAxis>
+							<effect>
+								<InnerShadow color="#3c1919" />
+							</effect>
+							<cursor>
+								<Cursor fx:constant="DEFAULT" />
+							</cursor>
+						</BarChart>
+						<Label layoutX="649.0" layoutY="163.0" text="캐릭터별 스킨 분포도">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+						<PieChart fx:id="skinPieChart" layoutX="517.0" layoutY="214.0" prefHeight="392.0" prefWidth="457.0" />
+						<ImageView fitHeight="120.0" fitWidth="821.0" layoutX="86.0" pickOnBounds="true">
+							<image>
+								<Image url="@../../../../../../../images/120412b_m.jpg" />
+							</image>
+						</ImageView>
+					</children>
+				</AnchorPane>
+			</content>
+		</Tab>
+	</tabs>
+</TabPane>

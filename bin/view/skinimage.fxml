@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="618.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<Separator layoutY="248.0" prefHeight="0.0" prefWidth="400.0" />
+		<ImageView fx:id="skinImage2" fitHeight="240.0" fitWidth="405.0" pickOnBounds="true">
+         <image>
+            <Image url="@../icons/20639_40625_250.jpg" />
+         </image></ImageView>
+		<Button fx:id="btnBuy" layoutX="70.0" layoutY="572.0" mnemonicParsing="false" text="구매하기" />
+		<Button fx:id="btnExit" layoutX="257.0" layoutY="572.0" mnemonicParsing="false" text="취소" />
+		<CheckBox fx:id="cbPromise" layoutX="119.0" layoutY="541.0" mnemonicParsing="false" text="약관에 동의 합니다." />
+      <ImageView fitHeight="315.0" fitWidth="405.0" layoutY="248.0" preserveRatio="true">
+         <image>
+            <Image url="@../icons/rp.png" />
+         </image>
+      </ImageView>
+	</children>
+</AnchorPane>

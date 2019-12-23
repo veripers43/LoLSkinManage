@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<Label layoutX="22.0" layoutY="14.0" prefHeight="43.0" prefWidth="132.0" text="충전하기" />
+		<Label layoutX="240.0" layoutY="52.0" text="현재금액:" />
+		<TextField fx:id="ChargeMoney" layoutX="107.0" layoutY="100.0" prefHeight="25.0" prefWidth="132.0" />
+		<Label layoutX="22.0" layoutY="105.0" text="충전할 금액:" />
+		<TextField fx:id="txtTotal" layoutX="107.0" layoutY="148.0" prefHeight="29.0" prefWidth="194.0" />
+		<Label layoutX="37.0" layoutY="153.0" text="예상 총액:" />
+		<ImageView fx:id="imageCaptcha" fitHeight="122.0" fitWidth="202.0" layoutX="23.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true" />
+		<TextField fx:id="txtCaptcha" layoutX="236.0" layoutY="234.0" prefHeight="29.0" prefWidth="152.0" />
+		<Label fx:id="lbCaptcha" layoutX="237.0" layoutY="215.0" prefHeight="19.0" prefWidth="126.0" text="인증에 성공했어요" />
+		<Button fx:id="btnCaptcha" layoutX="338.0" layoutY="263.0" mnemonicParsing="false" text="인증" />
+		<Button fx:id="btnOk" layoutX="103.0" layoutY="340.0" mnemonicParsing="false" text="확인" />
+		<Button fx:id="btnCancel" layoutX="237.0" layoutY="340.0" mnemonicParsing="false" text="닫기" />
+		<Label fx:id="lbMoney" layoutX="308.0" layoutY="52.0" prefHeight="19.0" prefWidth="67.0" text="5000원" />
+	</children>
+</AnchorPane>

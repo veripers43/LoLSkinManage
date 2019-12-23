@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="268.0" layoutY="35.0" text="비밀번호 찾기" />
+      <Label layoutX="61.0" layoutY="108.0" text="이름" />
+      <Label layoutX="61.0" layoutY="162.0" text="이메일" />
+      <Button fx:id="btnFindOk" layoutX="99.0" layoutY="243.0" mnemonicParsing="false" text="찾기" />
+      <Button fx:id="btnFindCancel" layoutX="234.0" layoutY="243.0" mnemonicParsing="false" text="취소" />
+      <TextField fx:id="txtFindName" layoutX="157.0" layoutY="103.0" />
+      <TextField fx:id="txtFindEmail" layoutX="157.0" layoutY="157.0" />
+   </children>
+</AnchorPane>

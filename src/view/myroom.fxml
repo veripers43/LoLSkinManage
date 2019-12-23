@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.TabPane?>
+
+<TabPane prefHeight="550.0" prefWidth="350.0"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<tabs>
+		<Tab text="충전/구매 내역">
+			<content>
+				<AnchorPane minHeight="0.0" minWidth="0.0"
+					prefHeight="180.0" prefWidth="200.0">
+					<children>
+						<Label layoutX="14.0" layoutY="14.0" text="충전내역" />
+						<Label layoutX="14.0" layoutY="242.0" text="구매내역" />
+						<TableView fx:id="tvCharge" layoutX="14.0"
+							layoutY="33.0" prefHeight="180.0" prefWidth="306.0" />
+						<TableView fx:id="tvPrice" layoutX="14.0"
+							layoutY="261.0" prefHeight="232.0" prefWidth="305.0" />
+					</children>
+				</AnchorPane>
+			</content>
+		</Tab>
+		<Tab text="회원정보수정">
+			<content>
+				<AnchorPane minHeight="0.0" minWidth="0.0"
+					prefHeight="180.0" prefWidth="200.0">
+					<children>
+						<Label layoutX="22.0" layoutY="14.0" prefHeight="45.0"
+							prefWidth="84.0" text="수정하기" />
+						<PasswordField fx:id="txtJoinPass1" layoutX="134.0"
+							layoutY="98.0" />
+						<TextField fx:id="txtJoinId" layoutX="134.0"
+							layoutY="59.0" />
+						<Label layoutX="22.0" layoutY="103.0" text="비밀번호" />
+						<Label layoutX="22.0" layoutY="64.0" text="아아디" />
+						<Label layoutX="22.0" layoutY="354.0" text="휴대폰" />
+						<Button fx:id="btnJoinCancel" layoutX="201.0"
+							layoutY="437.0" mnemonicParsing="false" text="취소" />
+						<Button fx:id="btnJoinOk" layoutX="68.0" layoutY="437.0"
+							mnemonicParsing="false" text="확인" />
+						<TextField fx:id="txtJoinPhone" layoutX="134.0"
+							layoutY="349.0" />
+						<RadioButton fx:id="radioJoinF" layoutX="226.0"
+							layoutY="291.0" mnemonicParsing="false" text="여자">
+							<toggleGroup>
+								<ToggleGroup fx:id="gender" />
+							</toggleGroup>
+						</RadioButton>
+						<RadioButton fx:id="radioJoinM" layoutX="134.0"
+							layoutY="291.0" mnemonicParsing="false" text="남자"
+							toggleGroup="$gender" />
+						<Label layoutX="30.0" layoutY="291.0" text="성별" />
+						<TextField fx:id="txtJoinEmail" layoutX="134.0"
+							layoutY="226.0" />
+						<TextField fx:id="txtJoinName" layoutX="134.0"
+							layoutY="183.0" />
+						<PasswordField fx:id="txtJoinPass2" layoutX="134.0"
+							layoutY="137.0" />
+						<Label layoutX="22.0" layoutY="231.0" text="이메일" />
+						<Label layoutX="29.0" layoutY="188.0" text="이름" />
+						<Label layoutX="20.0" layoutY="142.0" text="비밀번호 확인" />
+					</children>
+				</AnchorPane>
+			</content>
+		</Tab>
+	</tabs>
+</TabPane>

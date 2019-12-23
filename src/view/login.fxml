@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="482.0" prefWidth="815.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="830.0">
+         <image>
+            <Image url="@../icons/DJWAOx3UEAAXa8s.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="9.0" layoutY="13.0" prefHeight="458.0" prefWidth="386.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="138.0" prefWidth="386.0" text="스킨 관리 프로그램 " textAlignment="CENTER" textFill="#f8f3f3" wrapText="true">
+               <opaqueInsets>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </opaqueInsets>
+               <font>
+                  <Font size="38.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtLoginId">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <PasswordField fx:id="txtLoginPass">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </PasswordField>
+            <Button fx:id="btnLoginOk" mnemonicParsing="false" prefHeight="29.0" prefWidth="373.0" text="로그인">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+               </VBox.margin>
+            </Button>
+            <HBox prefHeight="52.0" prefWidth="366.0">
+               <children>
+                  <Button fx:id="btnLoginJoin" mnemonicParsing="false" prefHeight="29.0" prefWidth="185.0" text="회원가입">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnLoginFindInfo" mnemonicParsing="false" prefHeight="29.0" prefWidth="186.0" text="회원정보찾기">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
